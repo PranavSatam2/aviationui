@@ -35,7 +35,7 @@ body {
 
 /* Login Container with Fading Border */
 .login-container {
-  background: rgba(0, 0, 0, 0.1); /* Transparent white */
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
   max-width: 400px;
   width: 90%;
   text-align: center;
@@ -45,13 +45,13 @@ body {
   border-radius: 15px;
   border: 5px solid transparent; /* Transparent border */
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)); /* Fading gradient */
-  color: rgb(0, 0, 0); /* Text color */
+  color: white; /* Text color */
   animation: scaleUp 1.5s ease-in-out; /* Scale-up animation on load */
 }
 
 /* Heading */
 .login-container h2 {
-  color: #000000;
+  color: #ffffff;
   font-size: 26px;
   margin-bottom: 20px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Glow effect */

@@ -1,12 +1,17 @@
 import React from "react";
-import LoginPage from "./components/LoginPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import AddProduct from "./components/AddProduct";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <LoginPage />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/AddProduct" element={<AddProduct />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,16 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import AddProduct from "./AddProduct";
 import "../styles/Sidebar.css";
 
 const Sidebar = () => {
   return (
-    <aside className="app-sidebar">
+    <div className="sidebar">
       <ul>
-        <li><a href="#dashboard">Dashboard</a></li>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#settings">Settings</a></li>
-        <li><a href="#logout">Logout</a></li>
+        <li>
+          <Link to="/AddProduct">Product Form</Link>
+        </li>
+        {/* Add more links as needed */}
       </ul>
-    </aside>
+    </div>
   );
 };
 
